@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It-incubator precourse</title>
 </head>
+
 <body>
     <!-- ЗАДАНИЕ -->
     <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
@@ -32,7 +34,7 @@
             <option>Manchester</option>
             <option selected="selected">Moscow</option>
             <option>Omsk</option>
-           </select>
+        </select>
         <div data-cy="hw1-unordered-list-box-pre">
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
@@ -51,23 +53,23 @@
             <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
             <h2>Рейтинг любимых блюд</h2>
             <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
-             
+
             <ul class="nobullet">
-                
+
                 <style>
                     .nobullet {
-      
-                      list-style: none; /*убрал точки в списке */
-      
+
+                        list-style: none;
+                        /*убрал точки в списке */
+
                     }
-                   
                 </style>
-                    
-                      <li>1.Яичница</li>
-                      <li>2.Омлет</li>
-                      <li>3.Каша</li>
-                  </ul>
-    
+
+                <li>1.Яичница</li>
+                <li>2.Омлет</li>
+                <li>3.Каша</li>
+            </ul>
+
         </div>
         <div data-cy="hw1-skills-box-pre">
             <h2>Мои скиллы</h2>
@@ -75,19 +77,19 @@
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
-                <label>
-                    
+            <label>
 
-                    <input type="checkbox" id="skillCheckbox"  name="skill" checked>
-                    <label for="skillCheckbox">JS</label>
-                    <input type="checkbox" id="skillCheckbox" name="skill" checked >
-                    <label for="skillCheckbox">HTML</label>
-                    <input type="checkbox" id="skillCheckbox" name="skill" checked >
-                    <label for="skillCheckbox">CSS</label>
-                    <input type="checkbox" id="skillCheckbox" name="skill">
-                    <label for="skillCheckbox">React</label>
-                    <input type="checkbox" id="skillCheckbox" name="skill">
-                    <label for="skillCheckbox">Angular</label>
+
+                <input type="checkbox" id="skillCheckbox" name="skill" checked>
+                <label for="skillCheckbox">JS</label>
+                <input type="checkbox" id="skillCheckbox" name="skill" checked>
+                <label for="skillCheckbox">HTML</label>
+                <input type="checkbox" id="skillCheckbox" name="skill" checked>
+                <label for="skillCheckbox">CSS</label>
+                <input type="checkbox" id="skillCheckbox" name="skill">
+                <label for="skillCheckbox">React</label>
+                <input type="checkbox" id="skillCheckbox" name="skill">
+                <label for="skillCheckbox">Angular</label>
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
         <input type="text" placeholder="Новый скилл">
@@ -95,52 +97,48 @@
         <button>Добавить</button>
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
         <hr>
-        
+
         <table data-cy="hw-about-table-pre">
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
-                        <table border="1">
-                            <thead>
-                            <tr>
-                              <th>п/п</th>
-                              <th>Наименование</th>
-                              <th>Количество</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>Монитор</td>
-                              <td> 3</td>
-                            </tr>
-                            <tr>
-                              <td>2</td>
-                              <td>Клавиатура</td>
-                              <td>2</td>
-                            
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Мышь</td>
-                              <td>2</td>
-                            </tr>
-
-                            
-                            
-                            <tr>
-                                <td colspan="2">Итого:</td>
-                                <td>4</td>
-                              </tr>
-                            
-                          </tbody>
-                          </table>
-                    </table>
+            <table border="1" width="1">
+                <thead>
+                    <tr>
+                        <th>п/п</th>
+                        <th>Наименование</th>
+                        <th>Количество</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Монитор</td>
+                        <td> 3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Клавиатура</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Мышь</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Итого:</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table>
     </section>
     <footer data-cy="hw-footer-pre">
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
         <a href="https://it-incubator.io/" target="_blank">it-incubator</a>
     </footer>
 </body>
+
 </html>
