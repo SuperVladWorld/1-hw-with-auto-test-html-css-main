@@ -76,11 +76,19 @@
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
                 <label>
-                    <input type="checkbox" name="skill"> JS </label>
-                    <input type="checkbox" name="skill" checked > HTML </label>
-                    <input type="checkbox" name="skill" checked> CSS</label>
-                    <input type="checkbox" name="skill"> React </label>
-                    <input type="checkbox" name="skill"> Angular </label>
+                    <input type="checkbox" id="subscribeCheckbox" name="subscribe">
+                    <label for="subscribeCheckbox">Подписываться на рассылку новостей</label>
+
+                    <input type="checkbox" id="skillCheckbox"  name="skill">
+                    <label for="skillCheckbox">JS</label>
+                    <input type="checkbox" id="skillCheckbox" name="skill" checked >
+                    <label for="skillCheckbox">HTML</label>
+                    <input type="checkbox" id="skillCheckbox" name="skill" checked >
+                    <label for="skillCheckbox">CSS</label>
+                    <input type="checkbox" id="skillCheckbox" name="skill">
+                    <label for="skillCheckbox">React</label>
+                    <input type="checkbox" id="skillCheckbox" name="skill">
+                    <label for="skillCheckbox">Angular</label>
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
         <input type="text" placeholder="Новый скилл">
